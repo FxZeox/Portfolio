@@ -51,7 +51,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 overflow-hidden">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div
           className="mb-16"
@@ -60,17 +60,17 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
             Featured Projects
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          <p className="text-gray-600 dark:text-gray-400 text-base">
             Explore my latest work with modern technologies and innovative solutions
           </p>
         </motion.div>
 
         {/* Projects Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -84,7 +84,7 @@ export default function Projects() {
               whileHover={{ y: -10 }}
             >
               {/* Image Section */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -93,9 +93,9 @@ export default function Projects() {
               </div>
 
               {/* Content Section */}
-              <div className="p-6 space-y-4">
+              <div className="p-4 space-y-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -131,22 +131,22 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white rounded-lg hover:shadow-premium transition-all duration-300 font-semibold"
+                    className="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-700 dark:to-gray-800 text-white rounded-lg hover:shadow-premium transition-all duration-300 font-semibold"
                     whileHover={{ x: 5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <FaGithub className="text-lg" />
+                    <FaGithub className="text-base" />
                     Code
                   </motion.a>
                   <motion.a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:shadow-premium transition-all duration-300 font-semibold"
+                    className="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:shadow-premium transition-all duration-300 font-semibold"
                     whileHover={{ x: 5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <FaExternalLinkAlt className="text-lg" />
+                    <FaExternalLinkAlt className="text-base" />
                     Live
                   </motion.a>
                 </div>

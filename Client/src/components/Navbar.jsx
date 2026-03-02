@@ -19,7 +19,7 @@ export default function Navbar({ theme, toggleTheme }) {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
         <motion.div
           className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent"
           whileHover={{ scale: 1.05 }}

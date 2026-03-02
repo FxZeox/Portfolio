@@ -25,8 +25,8 @@ export default function Metrics() {
   };
 
   return (
-    <section id="metrics" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-6xl mx-auto">
+    <section id="metrics" className="py-16 px-4 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div
           className="mb-16 text-center"
@@ -35,17 +35,17 @@ export default function Metrics() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
             Key Metrics
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 text-base max-w-2xl mx-auto">
             Highlights of my work and achievements in DevOps and cloud engineering
           </p>
         </motion.div>
 
         {/* Metrics Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -56,16 +56,16 @@ export default function Metrics() {
             return (
               <motion.div
                 key={metric.label}
-                className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-gray-200 dark:border-gray-700"
                 variants={metricVariants}
                 whileHover={{ y: -5 }}
               >
                 <div className={`bg-gradient-to-br ${metric.color} p-4 rounded-lg w-fit mb-4`}>
-                  <Icon className="text-3xl text-white" />
+                  <Icon className="text-2xl text-white" />
                 </div>
 
                 <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-gray-900 dark:text-white">
+                  <span className="text-3xl font-bold text-gray-900 dark:text-white">
                     <motion.span
                       key={metric.value}
                       initial={{ opacity: 0 }}

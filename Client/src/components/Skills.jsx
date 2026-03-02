@@ -57,8 +57,8 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 px-4 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="py-16 px-4 bg-white dark:bg-gray-900">
+      <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div
           className="mb-16 text-center"
@@ -67,7 +67,7 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
             Skills & Expertise
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
@@ -88,16 +88,16 @@ export default function Skills() {
             return (
               <motion.div
                 key={catName}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-8 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all"
+                className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all"
                 variants={categoryVariants}
                 whileHover={{ y: -5 }}
               >
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-8">
-                  <div className={`bg-gradient-to-br ${catData.color} p-3 rounded-lg text-white`}>
-                    <Icon className="text-2xl" />
+                  <div className={`bg-gradient-to-br ${catData.color} p-2 rounded-lg text-white`}>
+                    <Icon className="text-xl" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     {catName}
                   </h3>
                 </div>

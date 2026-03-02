@@ -44,8 +44,8 @@ export default function CloudArchitecture() {
   };
 
   return (
-    <section id="architecture" className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto">
+    <section id="architecture" className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           className="mb-16 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -53,16 +53,16 @@ export default function CloudArchitecture() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400 bg-clip-text text-transparent mb-4">
             Cloud Architecture & Design
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 text-base max-w-2xl mx-auto">
             AWS Solutions Architect foundation covering resilient, scalable, and secure cloud designs
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -73,7 +73,7 @@ export default function CloudArchitecture() {
             return (
               <motion.div
                 key={item.title}
-                className="group bg-white dark:bg-gray-900 rounded-xl p-8 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all"
+                className="group bg-white dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all"
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
               >
@@ -96,13 +96,13 @@ export default function CloudArchitecture() {
         </motion.div>
 
         <motion.div
-          className="bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-700 dark:to-blue-700 rounded-xl p-12 text-white"
+          className="bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-700 dark:to-blue-700 rounded-xl p-8 text-white"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold mb-6">AWS Architecture Pillars</h3>
+          <h3 className="text-xl font-bold mb-4">AWS Architecture Pillars</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="flex items-start gap-3">
