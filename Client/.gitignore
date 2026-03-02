@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# optional environment files
+.env
+
+# OS generated files
+.DS_Store
+
+# local editors
+.vscode/
